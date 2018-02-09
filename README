@@ -1,0 +1,22 @@
+1. Program uses TCP protocol for connection.
+
+2. For proper functioning of CRS; there are 2 data structures. One for handling operations on repo_file and other to store details of clients connected.
+
+3. Data structure for Repo_file is
+	unordered map< File_name, < Alias, Path > >
+
+4. Data Structure for Client_info
+	unordered map< Alias, string>
+ Here string contains IP, client port and client download port.
+
+5. There is also a log file which contains information about which client called which command with timestamp.
+
+6.Client may not connect to server on first attempt, user need to re-execute the command again.
+
+7.Client should start sending commands when the program ask user to "write command".
+
+8.Commands like search,share,del and exec works fine. Get command is not implemented.
+
+9. exec works on server-client connections.
+
+10. Program is not able to deal with client-client communication. Client is not implemented to also act as a server. 
