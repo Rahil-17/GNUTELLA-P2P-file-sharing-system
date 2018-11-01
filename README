@@ -15,8 +15,6 @@
 
 7.Client should start sending commands when the program ask user to "write command".
 
-8.Commands like search,share,del and exec works fine. Get command is not implemented.
+8.Commands like search,share,del and exec works fine.
 
 9. exec works on server-client connections.
-
-10. Program is not able to deal with client-client communication. Client is not implemented to also act as a server. 
